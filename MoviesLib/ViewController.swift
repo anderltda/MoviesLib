@@ -10,21 +10,16 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        loadMovies()
+
     }
     
-    func loadMovies() {
-        
-        guard let jsonURL = Bundle.main.url(forResource: "movies", withExtension: "json") else { return }
-        
-              
-        
-        
-    }
-
-
+    
+    
+    
 }
+
+
 
