@@ -25,7 +25,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DjU-QZ-C7A" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="593" y="-889"/>
+            <point key="canvasLocation" x="1532" y="-889.20539730134942"/>
         </scene>
         <!--Filmes-->
         <scene sceneID="HSY-NH-oC8">
@@ -96,6 +96,7 @@
                                     <outlet property="lbRating" destination="GIo-bk-KTc" id="P41-Lv-ziU"/>
                                     <outlet property="lbSummary" destination="cIa-Gq-Ey9" id="ErE-2O-POc"/>
                                     <outlet property="lbTitle" destination="Kxx-ck-mpb" id="fo0-e3-huo"/>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="RIb-Bi-VMH"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -104,22 +105,22 @@
                             <outlet property="delegate" destination="tDM-s1-5zK" id="wrA-tY-Ku2"/>
                         </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" title="Filmes" image="movies" id="2Rw-Iy-t4e"/>
+                    <navigationItem key="navigationItem" title="Filmes" id="24N-Pq-fPL"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9wE-7V-uV4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1087.2" y="-890.10494752623697"/>
+            <point key="canvasLocation" x="-290" y="-890"/>
         </scene>
-        <!--View Controller-->
+        <!--Movie View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MoviesLib" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="MovieViewController" customModule="MoviesLib" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="toystory3" translatesAutoresizingMaskIntoConstraints="NO" id="o89-Wh-iAt">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="230"/>
+                                <rect key="frame" x="0.0" y="64" width="375" height="230"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="230" id="BjT-PJ-Tnw">
                                         <variation key="heightClass=compact" constant="180"/>
@@ -127,41 +128,41 @@
                                 </constraints>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="gradient" translatesAutoresizingMaskIntoConstraints="NO" id="ENW-U3-Vpo">
-                                <rect key="frame" x="0.0" y="170" width="375" height="60"/>
+                                <rect key="frame" x="0.0" y="234" width="375" height="60"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="IPq-1S-o4t"/>
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oR7-wO-raU">
-                                <rect key="frame" x="161" y="88.5" width="53" height="53"/>
+                                <rect key="frame" x="161" y="152.5" width="53" height="53"/>
                                 <state key="normal" backgroundImage="play"/>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Toy Story 3" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mj7-OZ-mIF">
-                                <rect key="frame" x="16" y="238" width="343" height="34"/>
+                                <rect key="frame" x="16" y="302" width="343" height="34"/>
                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="28"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" text="Acao | Infantil | Romance | Suspense" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yHd-pH-Ynb">
-                                <rect key="frame" x="16" y="276" width="225" height="33.5"/>
+                                <rect key="frame" x="16" y="340" width="225" height="33.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" text="2:00h" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yMj-oF-GAf">
-                                <rect key="frame" x="321" y="276" width="38" height="17"/>
+                                <rect key="frame" x="321" y="340" width="38" height="17"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="⭐️ 8.0/10" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jci-ei-Cvn">
-                                <rect key="frame" x="16" y="313.5" width="64" height="17"/>
+                                <rect key="frame" x="16" y="377.5" width="64" height="17"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <color key="textColor" red="0.99215686274509807" green="0.80000000000000004" blue="0.0078431372549019607" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="y5U-72-GIc" userLabel="AreaSinopse">
-                                <rect key="frame" x="0.0" y="346.5" width="375" height="320.5"/>
+                                <rect key="frame" x="0.0" y="410.5" width="375" height="207.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sinopse" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="adg-YD-vct">
                                         <rect key="frame" x="16" y="16" width="343" height="17"/>
@@ -174,7 +175,7 @@
                                         </variation>
                                     </label>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Dkz-xz-WUI">
-                                        <rect key="frame" x="16" y="41" width="343" height="263.5"/>
+                                        <rect key="frame" x="16" y="41" width="343" height="150.5"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -236,7 +237,7 @@
                             <constraint firstItem="mj7-OZ-mIF" firstAttribute="trailing" secondItem="ENW-U3-Vpo" secondAttribute="trailing" constant="-16" id="mjK-fc-PL6"/>
                             <constraint firstItem="y5U-72-GIc" firstAttribute="top" secondItem="jci-ei-Cvn" secondAttribute="bottom" constant="16" id="ne6-g2-DKv"/>
                             <constraint firstItem="y5U-72-GIc" firstAttribute="leading" secondItem="o89-Wh-iAt" secondAttribute="trailing" id="seI-bT-4R9"/>
-                            <constraint firstItem="o89-Wh-iAt" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="ttk-tQ-qxV"/>
+                            <constraint firstItem="o89-Wh-iAt" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="ttk-tQ-qxV"/>
                             <constraint firstItem="yMj-oF-GAf" firstAttribute="top" secondItem="yHd-pH-Ynb" secondAttribute="top" id="xBM-ds-QO0"/>
                             <constraint firstItem="ENW-U3-Vpo" firstAttribute="leading" secondItem="o89-Wh-iAt" secondAttribute="leading" id="yHt-0F-45w"/>
                         </constraints>
@@ -260,10 +261,18 @@
                         </variation>
                     </view>
                     <tabBarItem key="tabBarItem" systemItem="bookmarks" id="xQs-oI-sRn"/>
+                    <connections>
+                        <outlet property="ivPoster" destination="o89-Wh-iAt" id="kyO-MJ-mFZ"/>
+                        <outlet property="lbCategories" destination="yHd-pH-Ynb" id="jEw-5V-X5m"/>
+                        <outlet property="lbDuration" destination="yMj-oF-GAf" id="iTk-8X-7CI"/>
+                        <outlet property="lbRating" destination="jci-ei-Cvn" id="xgC-7h-JL8"/>
+                        <outlet property="lbTitle" destination="mj7-OZ-mIF" id="n6f-I4-GAT"/>
+                        <outlet property="tvSummary" destination="Dkz-xz-WUI" id="vgV-NB-RoH"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-236.38392857142856" y="-888.40579710144937"/>
+            <point key="canvasLocation" x="-290" y="-143"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="ynM-4B-IhH">
@@ -276,13 +285,32 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
-                        <segue destination="tDM-s1-5zK" kind="relationship" relationship="viewControllers" id="e3h-T8-j5s"/>
+                        <segue destination="AbA-Tu-TPp" kind="relationship" relationship="viewControllers" id="e3h-T8-j5s"/>
                         <segue destination="Muo-3i-ZsB" kind="relationship" relationship="viewControllers" id="gxH-DT-8Tt"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="u6y-6x-6y1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="383" y="-1657"/>
+        </scene>
+        <!--Filmes-->
+        <scene sceneID="O8s-aR-YqH">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="AbA-Tu-TPp" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Filmes" image="movies" id="2Rw-Iy-t4e"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="aUq-nR-Le3">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="tDM-s1-5zK" kind="relationship" relationship="rootViewController" id="L3S-TY-0UC"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2Bm-ck-Vqu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1087.2" y="-890.10494752623697"/>
         </scene>
     </scenes>
     <resources>

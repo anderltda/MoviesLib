@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		ACC7234222121FA400F5CF04 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC7234122121FA400F5CF04 /* AppDelegate.swift */; };
-		ACC7234422121FA400F5CF04 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC7234322121FA400F5CF04 /* ViewController.swift */; };
+		ACC7234422121FA400F5CF04 /* MovieViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC7234322121FA400F5CF04 /* MovieViewController.swift */; };
 		ACC7234722121FA400F5CF04 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACC7234522121FA400F5CF04 /* Main.storyboard */; };
 		ACC7234922121FA400F5CF04 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ACC7234822121FA400F5CF04 /* Assets.xcassets */; };
 		ACC7234C22121FA400F5CF04 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACC7234A22121FA400F5CF04 /* LaunchScreen.storyboard */; };
@@ -21,7 +21,7 @@
 /* Begin PBXFileReference section */
 		ACC7233E22121FA400F5CF04 /* MoviesLib.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MoviesLib.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACC7234122121FA400F5CF04 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		ACC7234322121FA400F5CF04 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		ACC7234322121FA400F5CF04 /* MovieViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieViewController.swift; sourceTree = "<group>"; };
 		ACC7234622121FA400F5CF04 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		ACC7234822121FA400F5CF04 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ACC7234B22121FA400F5CF04 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -65,7 +65,7 @@
 				ACE205382214C4C800CE487B /* movies.json */,
 				ACE2053A2214DB1A00CE487B /* Movie.swift */,
 				ACC7234122121FA400F5CF04 /* AppDelegate.swift */,
-				ACC7234322121FA400F5CF04 /* ViewController.swift */,
+				ACC7234322121FA400F5CF04 /* MovieViewController.swift */,
 				ACC7234522121FA400F5CF04 /* Main.storyboard */,
 				ACE2053E2214F65C00CE487B /* MovieTableViewCell.swift */,
 				ACE2053C2214E8C100CE487B /* MoviesTableViewController.swift */,
@@ -150,7 +150,7 @@
 			files = (
 				ACE2053F2214F65C00CE487B /* MovieTableViewCell.swift in Sources */,
 				ACE2053D2214E8C100CE487B /* MoviesTableViewController.swift in Sources */,
-				ACC7234422121FA400F5CF04 /* ViewController.swift in Sources */,
+				ACC7234422121FA400F5CF04 /* MovieViewController.swift in Sources */,
 				ACC7234222121FA400F5CF04 /* AppDelegate.swift in Sources */,
 				ACE2053B2214DB1A00CE487B /* Movie.swift in Sources */,
 			);
