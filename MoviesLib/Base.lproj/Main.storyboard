@@ -48,32 +48,47 @@
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="103.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="iak-Me-OTf">
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="iak-Me-OTf">
                                             <rect key="frame" x="12" y="6" width="63" height="80"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="63" id="pfG-9a-j4A"/>
+                                                <constraint firstAttribute="height" constant="80" id="tRX-b1-a2c"/>
+                                            </constraints>
                                         </imageView>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Titulo do Filme" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kxx-ck-mpb">
-                                            <rect key="frame" x="89" y="6" width="276" height="20"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Titulo do Filme" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kxx-ck-mpb">
+                                            <rect key="frame" x="89" y="6" width="276" height="19.5"/>
                                             <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
                                             <color key="textColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Sinopse" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cIa-Gq-Ey9">
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sinopse" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cIa-Gq-Ey9">
                                             <rect key="frame" x="89" y="31" width="276" height="17"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="14"/>
                                             <color key="textColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Nota" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GIo-bk-KTc">
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nota" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GIo-bk-KTc">
                                             <rect key="frame" x="89" y="69" width="276" height="17"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="14"/>
                                             <color key="textColor" red="1" green="0.80784313725490198" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="bottom" secondItem="GIo-bk-KTc" secondAttribute="bottom" constant="17.5" id="8dG-yp-wnZ"/>
+                                        <constraint firstItem="Kxx-ck-mpb" firstAttribute="top" secondItem="N0F-iH-LaL" secondAttribute="top" constant="6" id="AUo-ev-O59"/>
+                                        <constraint firstItem="iak-Me-OTf" firstAttribute="top" secondItem="N0F-iH-LaL" secondAttribute="top" constant="6" id="G6c-xu-2hY"/>
+                                        <constraint firstItem="iak-Me-OTf" firstAttribute="leading" secondItem="N0F-iH-LaL" secondAttribute="leading" constant="12" id="Lw7-c9-2F3"/>
+                                        <constraint firstItem="cIa-Gq-Ey9" firstAttribute="top" secondItem="Kxx-ck-mpb" secondAttribute="bottom" constant="5.5" id="MgZ-Af-hhf"/>
+                                        <constraint firstItem="GIo-bk-KTc" firstAttribute="leading" secondItem="iak-Me-OTf" secondAttribute="trailing" constant="14" id="PYm-dh-Eok"/>
+                                        <constraint firstAttribute="trailing" secondItem="GIo-bk-KTc" secondAttribute="trailing" constant="10" id="SM9-wf-fna"/>
+                                        <constraint firstItem="Kxx-ck-mpb" firstAttribute="leading" secondItem="iak-Me-OTf" secondAttribute="trailing" constant="14" id="fKF-Uw-Pse"/>
+                                        <constraint firstItem="cIa-Gq-Ey9" firstAttribute="leading" secondItem="iak-Me-OTf" secondAttribute="trailing" constant="14" id="hQE-iQ-7hy"/>
+                                        <constraint firstAttribute="trailing" secondItem="cIa-Gq-Ey9" secondAttribute="trailing" constant="10" id="kiK-bn-UIf"/>
+                                        <constraint firstAttribute="trailing" secondItem="Kxx-ck-mpb" secondAttribute="trailing" constant="10" id="kq2-WM-wUd"/>
+                                        <constraint firstItem="GIo-bk-KTc" firstAttribute="top" secondItem="cIa-Gq-Ey9" secondAttribute="bottom" constant="21" id="n8T-c6-ht4"/>
+                                        <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="iak-Me-OTf" secondAttribute="bottom" constant="17.5" id="xCh-3X-FmJ"/>
+                                    </constraints>
                                 </tableViewCellContentView>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <connections>
