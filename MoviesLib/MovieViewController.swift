@@ -23,7 +23,7 @@ class MovieViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()        
         if let movie = movie {
-            ivPoster.image = UIImage(named: movie.image)
+            //ivPoster.image = UIImage(named: movie.image)
             lbTitle.text = movie.title
             lbDuration.text = movie.duration
             lbRating.text = "⭐️\(movie.rating)/10"

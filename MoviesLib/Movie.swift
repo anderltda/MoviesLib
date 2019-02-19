@@ -6,6 +6,7 @@
 //  Copyright © 2019 FIAP. All rights reserved.
 //
 
+/*
 import Foundation
 
 struct Movie: Codable {
@@ -20,5 +21,5 @@ struct Movie: Codable {
     
     
 }
-
+*/
 

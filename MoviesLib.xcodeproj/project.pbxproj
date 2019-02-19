@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AC4792F0221B84C400FEE9FB /* MoviesLib.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AC4792EE221B84C400FEE9FB /* MoviesLib.xcdatamodeld */; };
+		AC4792F2221B8B2E00FEE9FB /* UIViewController+CoreDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC4792F1221B8B2E00FEE9FB /* UIViewController+CoreDate.swift */; };
+		AC4792F4221B8EB500FEE9FB /* MovieRegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC4792F3221B8EB500FEE9FB /* MovieRegisterViewController.swift */; };
 		ACC7234222121FA400F5CF04 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC7234122121FA400F5CF04 /* AppDelegate.swift */; };
 		ACC7234422121FA400F5CF04 /* MovieViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC7234322121FA400F5CF04 /* MovieViewController.swift */; };
 		ACC7234722121FA400F5CF04 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACC7234522121FA400F5CF04 /* Main.storyboard */; };
@@ -19,6 +22,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		AC4792EF221B84C400FEE9FB /* MoviesLib.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MoviesLib.xcdatamodel; sourceTree = "<group>"; };
+		AC4792F1221B8B2E00FEE9FB /* UIViewController+CoreDate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+CoreDate.swift"; sourceTree = "<group>"; };
+		AC4792F3221B8EB500FEE9FB /* MovieRegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieRegisterViewController.swift; sourceTree = "<group>"; };
 		ACC7233E22121FA400F5CF04 /* MoviesLib.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MoviesLib.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACC7234122121FA400F5CF04 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ACC7234322121FA400F5CF04 /* MovieViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieViewController.swift; sourceTree = "<group>"; };
@@ -65,13 +71,16 @@
 				ACE205382214C4C800CE487B /* movies.json */,
 				ACE2053A2214DB1A00CE487B /* Movie.swift */,
 				ACC7234122121FA400F5CF04 /* AppDelegate.swift */,
+				AC4792EE221B84C400FEE9FB /* MoviesLib.xcdatamodeld */,
 				ACC7234322121FA400F5CF04 /* MovieViewController.swift */,
 				ACC7234522121FA400F5CF04 /* Main.storyboard */,
+				AC4792F3221B8EB500FEE9FB /* MovieRegisterViewController.swift */,
 				ACE2053E2214F65C00CE487B /* MovieTableViewCell.swift */,
 				ACE2053C2214E8C100CE487B /* MoviesTableViewController.swift */,
 				ACC7234822121FA400F5CF04 /* Assets.xcassets */,
 				ACC7234A22121FA400F5CF04 /* LaunchScreen.storyboard */,
 				ACC7234D22121FA400F5CF04 /* Info.plist */,
+				AC4792F1221B8B2E00FEE9FB /* UIViewController+CoreDate.swift */,
 			);
 			path = MoviesLib;
 			sourceTree = "<group>";
@@ -148,11 +157,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AC4792F4221B8EB500FEE9FB /* MovieRegisterViewController.swift in Sources */,
 				ACE2053F2214F65C00CE487B /* MovieTableViewCell.swift in Sources */,
 				ACE2053D2214E8C100CE487B /* MoviesTableViewController.swift in Sources */,
+				AC4792F0221B84C400FEE9FB /* MoviesLib.xcdatamodeld in Sources */,
 				ACC7234422121FA400F5CF04 /* MovieViewController.swift in Sources */,
 				ACC7234222121FA400F5CF04 /* AppDelegate.swift in Sources */,
 				ACE2053B2214DB1A00CE487B /* Movie.swift in Sources */,
+				AC4792F2221B8B2E00FEE9FB /* UIViewController+CoreDate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -350,6 +362,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		AC4792EE221B84C400FEE9FB /* MoviesLib.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				AC4792EF221B84C400FEE9FB /* MoviesLib.xcdatamodel */,
+			);
+			currentVersion = AC4792EF221B84C400FEE9FB /* MoviesLib.xcdatamodel */;
+			path = MoviesLib.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = ACC7233622121FA400F5CF04 /* Project object */;
 }
