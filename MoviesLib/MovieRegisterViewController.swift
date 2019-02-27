@@ -61,10 +61,23 @@ class MovieRegisterViewController: UIViewController {
     }
     
     @IBAction func selectPoster(_ sender: Any) {
+        let alert = UIAlertController(title: "Selecionar poster",
+                                      message: "De onde voce quer escolher o poster?",
+                                      preferredStyle: .actionSheet)
         
-        let alert = UIAlertController(title: "Selecionar poster", message: "De onde voce quer escolher o poster?", preferredStyle: .alert)
+        let okAction = UIAlertAction(title: "OK", style: .default) { (_) in
+            print("Funcionou o OK")
+        }
         
+        alert.addAction(okAction)
         
+        let cancelAction = UIAlertAction(title: "Cancelar", style: .cancel) { (_) in
+            print("Funcionou o cancelar")
+        }
+        
+        alert.addAction(cancelAction)
+        
+        present(alert, animated: true, completion: nil)
         
     }
     
