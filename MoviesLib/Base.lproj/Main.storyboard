@@ -16,7 +16,7 @@
                     <view key="view" contentMode="scaleToFill" id="ANA-xT-d4e">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="ToU-Mz-oMX"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Ajustes" image="settings" id="vu5-IL-bIQ">
@@ -25,7 +25,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DjU-QZ-C7A" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1532" y="-889.20539730134942"/>
+            <point key="canvasLocation" x="918" y="-890"/>
         </scene>
         <!--Filmes-->
         <scene sceneID="HSY-NH-oC8">
@@ -115,7 +115,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9wE-7V-uV4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-290" y="-890"/>
+            <point key="canvasLocation" x="-575" y="-890"/>
         </scene>
         <!--Movie Register View Controller-->
         <scene sceneID="wf6-TI-V4O">
@@ -190,7 +190,23 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Fut-av-WAW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="381.60000000000002" y="-889.20539730134942"/>
+            <point key="canvasLocation" x="194" y="-890"/>
+        </scene>
+        <!--Cinemas-->
+        <scene sceneID="HU2-hf-uFl">
+            <objects>
+                <viewController id="iqp-IG-qGc" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="HWW-X0-bN5">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="fUl-dT-dhn"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Cinemas" id="qIR-51-uop"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aMZ-2L-r4r" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="449" y="-1657"/>
         </scene>
         <!--Movie View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -342,6 +358,13 @@
                         </variation>
                     </view>
                     <tabBarItem key="tabBarItem" systemItem="bookmarks" id="xQs-oI-sRn"/>
+                    <navigationItem key="navigationItem" id="kva-wB-7jR">
+                        <barButtonItem key="rightBarButtonItem" systemItem="edit" id="vbS-Vn-3tb">
+                            <connections>
+                                <segue destination="ssS-RN-VhS" kind="show" id="hXb-Np-xrM"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="ivPoster" destination="o89-Wh-iAt" id="kyO-MJ-mFZ"/>
                         <outlet property="lbCategories" destination="yHd-pH-Ynb" id="jEw-5V-X5m"/>
@@ -353,7 +376,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-290" y="-143"/>
+            <point key="canvasLocation" x="-575" y="-111"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="ynM-4B-IhH">
@@ -367,12 +390,13 @@
                     </tabBar>
                     <connections>
                         <segue destination="AbA-Tu-TPp" kind="relationship" relationship="viewControllers" id="e3h-T8-j5s"/>
+                        <segue destination="iqp-IG-qGc" kind="relationship" relationship="viewControllers" id="teY-zT-LVI"/>
                         <segue destination="Muo-3i-ZsB" kind="relationship" relationship="viewControllers" id="gxH-DT-8Tt"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="u6y-6x-6y1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="383" y="-1657"/>
+            <point key="canvasLocation" x="-553" y="-1657"/>
         </scene>
         <!--Filmes-->
         <scene sceneID="O8s-aR-YqH">
@@ -391,7 +415,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2Bm-ck-Vqu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1087.2" y="-890.10494752623697"/>
+            <point key="canvasLocation" x="-1481" y="-890"/>
         </scene>
     </scenes>
     <resources>
@@ -401,4 +425,7 @@
         <image name="settings" width="22" height="22"/>
         <image name="toystory3" width="400" height="330"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="hXb-Np-xrM"/>
+    </inferredMetricsTieBreakers>
 </document>

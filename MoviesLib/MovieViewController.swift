@@ -21,7 +21,13 @@ class MovieViewController: UIViewController {
     @IBOutlet weak var tvSummary: UITextView!
     
     override func viewDidLoad() {
-        super.viewDidLoad()        
+        super.viewDidLoad()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        
+        super.viewWillAppear(animated)
+        
         if let movie = movie {
             //ivPoster.image = UIImage(named: movie.image)
             lbTitle.text = movie.title
@@ -29,6 +35,12 @@ class MovieViewController: UIViewController {
             lbRating.text = "⭐️\(movie.rating)/10"
             lbCategories.text = movie.categories
             tvSummary.text = movie.summary
+        }
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let vc = segue.destination as? MovieRegisterViewController {
+            vc.movie = movie
         }
     }
     
