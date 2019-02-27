@@ -19,6 +19,7 @@ class MovieRegisterViewController: UIViewController {
     @IBOutlet weak var tfCategories: UITextField!
     @IBOutlet weak var tvSummary: UITextView!
     @IBOutlet weak var btAddEdit: UIButton!
+    @IBOutlet weak var ivPoster: UIImageView!
     
 
     override func viewDidLoad() {
@@ -58,6 +59,16 @@ class MovieRegisterViewController: UIViewController {
             print(error)
         }
     }
+    
+    @IBAction func selectPoster(_ sender: Any) {
+        
+        let alert = UIAlertController(title: "Selecionar poster", message: "De onde voce quer escolher o poster?", preferredStyle: .alert)
+        
+        
+        
+    }
+    
+    
     
     /*
     // MARK: - Navigation

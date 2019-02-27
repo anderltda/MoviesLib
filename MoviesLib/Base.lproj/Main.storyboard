@@ -167,10 +167,23 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="elk-nt-raW">
-                                <rect key="frame" x="16" y="405" width="335" height="48"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PTU-gs-y5m">
+                                <rect key="frame" x="16" y="398" width="343" height="26"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                <state key="normal" title="Selecione Poster"/>
+                                <connections>
+                                    <action selector="selectPoster:" destination="ssS-RN-VhS" eventType="touchUpInside" id="Rip-d0-SXt"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="y4l-WQ-M5V">
+                                <rect key="frame" x="16" y="432" width="343" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="elk-nt-raW">
+                                <rect key="frame" x="16" y="568" width="335" height="48"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Cadastrar"/>
                                 <connections>
                                     <action selector="addEditMovie:" destination="ssS-RN-VhS" eventType="touchUpInside" id="TWe-ZI-9FE"/>
                                 </connections>
@@ -181,6 +194,7 @@
                     </view>
                     <connections>
                         <outlet property="btAddEdit" destination="elk-nt-raW" id="eCQ-lS-aAO"/>
+                        <outlet property="ivPoster" destination="y4l-WQ-M5V" id="p1c-df-leE"/>
                         <outlet property="tfCategories" destination="DxK-Jr-an1" id="jmY-fU-0pJ"/>
                         <outlet property="tfDuration" destination="9JW-FP-l3g" id="t14-c4-OfZ"/>
                         <outlet property="tfRating" destination="Kvt-9q-Phw" id="XIp-XS-ckd"/>
@@ -190,7 +204,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Fut-av-WAW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="194" y="-890"/>
+            <point key="canvasLocation" x="192.80000000000001" y="-890.10494752623697"/>
         </scene>
         <!--Cinemas-->
         <scene sceneID="HU2-hf-uFl">
