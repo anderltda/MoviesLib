@@ -10,6 +10,8 @@
 		AC4792F0221B84C400FEE9FB /* MoviesLib.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AC4792EE221B84C400FEE9FB /* MoviesLib.xcdatamodeld */; };
 		AC4792F2221B8B2E00FEE9FB /* UIViewController+CoreDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC4792F1221B8B2E00FEE9FB /* UIViewController+CoreDate.swift */; };
 		AC4792F4221B8EB500FEE9FB /* MovieRegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC4792F3221B8EB500FEE9FB /* MovieRegisterViewController.swift */; };
+		AC536F0122276011000D7634 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC536F0022276011000D7634 /* API.swift */; };
+		AC536F0322276CC6000D7634 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC536F0222276CC6000D7634 /* MapViewController.swift */; };
 		ACC7234222121FA400F5CF04 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC7234122121FA400F5CF04 /* AppDelegate.swift */; };
 		ACC7234422121FA400F5CF04 /* MovieViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC7234322121FA400F5CF04 /* MovieViewController.swift */; };
 		ACC7234722121FA400F5CF04 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACC7234522121FA400F5CF04 /* Main.storyboard */; };
@@ -25,6 +27,8 @@
 		AC4792EF221B84C400FEE9FB /* MoviesLib.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MoviesLib.xcdatamodel; sourceTree = "<group>"; };
 		AC4792F1221B8B2E00FEE9FB /* UIViewController+CoreDate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+CoreDate.swift"; sourceTree = "<group>"; };
 		AC4792F3221B8EB500FEE9FB /* MovieRegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieRegisterViewController.swift; sourceTree = "<group>"; };
+		AC536F0022276011000D7634 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		AC536F0222276CC6000D7634 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		ACC7233E22121FA400F5CF04 /* MoviesLib.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MoviesLib.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACC7234122121FA400F5CF04 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ACC7234322121FA400F5CF04 /* MovieViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieViewController.swift; sourceTree = "<group>"; };
@@ -73,7 +77,9 @@
 				ACC7234122121FA400F5CF04 /* AppDelegate.swift */,
 				AC4792EE221B84C400FEE9FB /* MoviesLib.xcdatamodeld */,
 				ACC7234322121FA400F5CF04 /* MovieViewController.swift */,
+				AC536F0022276011000D7634 /* API.swift */,
 				ACC7234522121FA400F5CF04 /* Main.storyboard */,
+				AC536F0222276CC6000D7634 /* MapViewController.swift */,
 				AC4792F3221B8EB500FEE9FB /* MovieRegisterViewController.swift */,
 				ACE2053E2214F65C00CE487B /* MovieTableViewCell.swift */,
 				ACE2053C2214E8C100CE487B /* MoviesTableViewController.swift */,
@@ -160,10 +166,12 @@
 				AC4792F4221B8EB500FEE9FB /* MovieRegisterViewController.swift in Sources */,
 				ACE2053F2214F65C00CE487B /* MovieTableViewCell.swift in Sources */,
 				ACE2053D2214E8C100CE487B /* MoviesTableViewController.swift in Sources */,
+				AC536F0322276CC6000D7634 /* MapViewController.swift in Sources */,
 				AC4792F0221B84C400FEE9FB /* MoviesLib.xcdatamodeld in Sources */,
 				ACC7234422121FA400F5CF04 /* MovieViewController.swift in Sources */,
 				ACC7234222121FA400F5CF04 /* AppDelegate.swift in Sources */,
 				ACE2053B2214DB1A00CE487B /* Movie.swift in Sources */,
+				AC536F0122276011000D7634 /* API.swift in Sources */,
 				AC4792F2221B8B2E00FEE9FB /* UIViewController+CoreDate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

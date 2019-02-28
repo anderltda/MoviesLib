@@ -176,13 +176,14 @@
                                     <action selector="selectPoster:" destination="ssS-RN-VhS" eventType="touchUpInside" id="Rip-d0-SXt"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="y4l-WQ-M5V">
-                                <rect key="frame" x="16" y="432" width="343" height="128"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="y4l-WQ-M5V">
+                                <rect key="frame" x="16" y="432" width="343" height="139"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="elk-nt-raW">
-                                <rect key="frame" x="16" y="568" width="335" height="48"/>
+                                <rect key="frame" x="16" y="579" width="335" height="37"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                 <state key="normal" title="Cadastrar"/>
                                 <connections>
                                     <action selector="addEditMovie:" destination="ssS-RN-VhS" eventType="touchUpInside" id="TWe-ZI-9FE"/>
@@ -206,21 +207,44 @@
             </objects>
             <point key="canvasLocation" x="192.80000000000001" y="-890.10494752623697"/>
         </scene>
-        <!--Cinemas-->
+        <!--Cinema-->
         <scene sceneID="HU2-hf-uFl">
             <objects>
-                <viewController id="iqp-IG-qGc" sceneMemberID="viewController">
+                <viewController id="iqp-IG-qGc" customClass="MapViewController" customModule="MoviesLib" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="HWW-X0-bN5">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="43o-8I-ygO">
+                                <rect key="frame" x="0.0" y="96" width="375" height="522"/>
+                            </mapView>
+                            <searchBar contentMode="redraw" placeholder="Entre com o ponto de interesse" translatesAutoresizingMaskIntoConstraints="NO" id="9hB-8W-FLn">
+                                <rect key="frame" x="0.0" y="40" width="375" height="56"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </searchBar>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="9hB-8W-FLn" firstAttribute="leading" secondItem="fUl-dT-dhn" secondAttribute="leading" id="0Lf-BD-mAp"/>
+                            <constraint firstItem="9hB-8W-FLn" firstAttribute="trailing" secondItem="fUl-dT-dhn" secondAttribute="trailing" id="B10-7K-bG4"/>
+                            <constraint firstItem="43o-8I-ygO" firstAttribute="trailing" secondItem="fUl-dT-dhn" secondAttribute="trailing" id="NuO-Lm-Ey4"/>
+                            <constraint firstItem="43o-8I-ygO" firstAttribute="bottom" secondItem="fUl-dT-dhn" secondAttribute="bottom" id="OXA-QR-b9s"/>
+                            <constraint firstItem="9hB-8W-FLn" firstAttribute="top" secondItem="fUl-dT-dhn" secondAttribute="top" constant="20" id="ZdK-CV-4fI"/>
+                            <constraint firstItem="43o-8I-ygO" firstAttribute="top" secondItem="9hB-8W-FLn" secondAttribute="bottom" id="dcE-kX-5Ao"/>
+                            <constraint firstItem="43o-8I-ygO" firstAttribute="top" secondItem="9hB-8W-FLn" secondAttribute="bottom" id="xWy-q2-sYn"/>
+                            <constraint firstItem="43o-8I-ygO" firstAttribute="leading" secondItem="fUl-dT-dhn" secondAttribute="leading" id="z6C-Ba-L2p"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="fUl-dT-dhn"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Cinemas" id="qIR-51-uop"/>
+                    <tabBarItem key="tabBarItem" title="Cinema" image="theaters" id="qIR-51-uop"/>
+                    <connections>
+                        <outlet property="mapView" destination="43o-8I-ygO" id="qI9-uf-jx0"/>
+                        <outlet property="searchBar" destination="9hB-8W-FLn" id="5kG-cZ-1af"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aMZ-2L-r4r" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="449" y="-1657"/>
+            <point key="canvasLocation" x="448.80000000000001" y="-1657.4212893553224"/>
         </scene>
         <!--Movie View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -247,6 +271,9 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oR7-wO-raU">
                                 <rect key="frame" x="161" y="152.5" width="53" height="53"/>
                                 <state key="normal" backgroundImage="play"/>
+                                <connections>
+                                    <action selector="playMovieTrailer:" destination="BYZ-38-t0r" eventType="touchUpInside" id="W57-dB-5Mg"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Toy Story 3" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mj7-OZ-mIF">
                                 <rect key="frame" x="16" y="302" width="343" height="34"/>
@@ -404,7 +431,7 @@
                     </tabBar>
                     <connections>
                         <segue destination="AbA-Tu-TPp" kind="relationship" relationship="viewControllers" id="e3h-T8-j5s"/>
-                        <segue destination="iqp-IG-qGc" kind="relationship" relationship="viewControllers" id="teY-zT-LVI"/>
+                        <segue destination="iqp-IG-qGc" kind="relationship" relationship="viewControllers" id="ryG-Ww-fcV"/>
                         <segue destination="Muo-3i-ZsB" kind="relationship" relationship="viewControllers" id="gxH-DT-8Tt"/>
                     </connections>
                 </tabBarController>
@@ -437,6 +464,7 @@
         <image name="movies" width="22" height="22"/>
         <image name="play" width="53" height="53"/>
         <image name="settings" width="22" height="22"/>
+        <image name="theaters" width="22" height="22"/>
         <image name="toystory3" width="400" height="330"/>
     </resources>
     <inferredMetricsTieBreakers>

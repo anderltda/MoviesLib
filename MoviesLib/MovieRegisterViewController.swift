@@ -32,6 +32,7 @@ class MovieRegisterViewController: UIViewController {
             tfDuration.text = movie.duration
             tfCategories.text = movie.categories
             tvSummary.text = movie.summary
+            ivPoster.image = movie.image as? UIImage
             btAddEdit.setTitle("Alterar", for: .normal)
             
         }
@@ -49,6 +50,7 @@ class MovieRegisterViewController: UIViewController {
         movie?.duration = tfDuration.text
         movie?.summary = tvSummary.text
         movie?.categories = tfCategories.text
+        movie?.image = ivPoster.image
         
         do {
             
@@ -60,26 +62,40 @@ class MovieRegisterViewController: UIViewController {
         }
     }
     
+    func selectPicture(sourde: UIImagePickerController.SourceType) {
+        let imagePicker = UIImagePickerController()
+        imagePicker.sourceType = sourde
+        imagePicker.delegate = self
+        present(imagePicker, animated: true, completion: nil)
+    }
+    
     @IBAction func selectPoster(_ sender: Any) {
         let alert = UIAlertController(title: "Selecionar poster",
                                       message: "De onde voce quer escolher o poster?",
                                       preferredStyle: .actionSheet)
         
-        let okAction = UIAlertAction(title: "OK", style: .default) { (_) in
-            print("Funcionou o OK")
+        let cameraAction = UIAlertAction(title: "Camera", style: .default) { (_) in
+            self.selectPicture(sourde: .camera)
         }
         
-        alert.addAction(okAction)
+        alert.addAction(cameraAction)
+        
+        let libraryAction = UIAlertAction(title: "Biblioteca de fotos", style: .default) { (_) in
+            self.selectPicture(sourde: .photoLibrary)
+        }
+        
+        alert.addAction(libraryAction)
         
         let cancelAction = UIAlertAction(title: "Cancelar", style: .cancel) { (_) in
-            print("Funcionou o cancelar")
+           
+            
         }
         
         alert.addAction(cancelAction)
         
         present(alert, animated: true, completion: nil)
-        
     }
+    
     
     
     
@@ -93,4 +109,19 @@ class MovieRegisterViewController: UIViewController {
     }
     */
 
+}
+
+extension MovieRegisterViewController: UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
+        
+        if let image = info[.originalImage] as? UIImage {
+           
+            ivPoster.image = image
+            
+        }
+        
+        dismiss(animated: true, completion: nil)
+    }
+    
 }
