@@ -94,6 +94,10 @@ class MovieRegisterViewController: UIViewController {
         alert.addAction(cancelAction)
         
         present(alert, animated: true, completion: nil)
+        
+
+        ivPoster.resignFirstResponder()
+        tvSummary.resignFirstResponder()
     }
     
     
